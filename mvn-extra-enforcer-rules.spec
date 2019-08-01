@@ -4,10 +4,12 @@
 #
 Name     : mvn-extra-enforcer-rules
 Version  : 1.0.beta.9
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.jar
 Source0  : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.jar
-Source1  : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.pom
+Source1  : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3/extra-enforcer-rules-1.0-beta-3.jar
+Source2  : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3/extra-enforcer-rules-1.0-beta-3.pom
+Source3  : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -30,10 +32,16 @@ data components for the mvn-extra-enforcer-rules package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3/extra-enforcer-rules-1.0-beta-3.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3/extra-enforcer-rules-1.0-beta-3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.pom
 
 
 %files
@@ -41,5 +49,7 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/codehaus/mojo/extra
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3/extra-enforcer-rules-1.0-beta-3.jar
+/usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3/extra-enforcer-rules-1.0-beta-3.pom
 /usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.jar
 /usr/share/java/.m2/repository/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.pom
