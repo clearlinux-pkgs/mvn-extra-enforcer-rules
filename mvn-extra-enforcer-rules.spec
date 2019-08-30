@@ -4,7 +4,7 @@
 #
 Name     : mvn-extra-enforcer-rules
 Version  : 1.0.beta.9
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.jar
 Source0  : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-9/extra-enforcer-rules-1.0-beta-9.jar
 Source1  : https://repo1.maven.org/maven2/org/codehaus/mojo/extra-enforcer-rules/1.0-beta-3/extra-enforcer-rules-1.0-beta-3.jar
